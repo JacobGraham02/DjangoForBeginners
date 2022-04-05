@@ -1,0 +1,14 @@
+The following command creates a virtual Python environment in the current folder location:
+py -m venv .
+
+Activates the virtual environment for your use
+.\Scripts\activate 
+
+Deactivates the virtual environment so you no longer need 
+.\Scripts\deactivate
+
+Creates a boilerplate django application in the target project folder
+django-admin createproject <project_name>
+
+Run the boilerplate Django project
+py manage.py runserver
