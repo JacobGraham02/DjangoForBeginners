@@ -29,16 +29,21 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# Where your applications will be built. These things are very core to django. 
 INSTALLED_APPS = [
+    # The following are built-in components of Django. The admin component is used to create an administrative user for the Django application and where you can see the
+    # administration panel after logging into the admin user.
+    # The auth component is used to provide authentication when a user tries to login with an account.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'products',
 ]
-
+# Has to do with requests, how they are handled, how security is handled, etc. 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

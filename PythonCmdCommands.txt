@@ -12,3 +12,22 @@ django-admin createproject <project_name>
 
 Run the boilerplate Django project
 py manage.py runserver
+
+When running the below command from your manage.py root folder for a Django project, all of the settings in the project settings.py are synced with the project
+py manage.py migrate
+
+
+Django superuser:
+Username: JacobG02
+Password: test'
+
+Django command for creating a custom app component
+py manage.py startapp <app_name>
+
+
+Python making migrations from added component classes that map to the database
+py manage.py makemigrations
+
+Applying these migrations to the database to build up the actual tables. Think of this like ASP.NET's database migrations, where a database is automatically generated for you
+depending on what you have inside your model classes.
+py manage.py migrate.
