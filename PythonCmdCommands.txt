@@ -1,3 +1,5 @@
+Continue video from: https://www.youtube.com/watch?v=F5mRW0jo-U4&list=LL&index=9 at 47:10
+
 The following command creates a virtual Python environment in the current folder location:
 py -m venv .
 
@@ -31,3 +33,19 @@ py manage.py makemigrations
 Applying these migrations to the database to build up the actual tables. Think of this like ASP.NET's database migrations, where a database is automatically generated for you
 depending on what you have inside your model classes.
 py manage.py migrate.
+
+When you want to open the Python native command shell and write Python code, use the following command from the manage.py root folder
+py manage.py shell
+
+
+The following syntax is used directly in the Python shell to create some object that is defined in a model class. The syntax for this is like using a NoSQL database
+like MongoDB or PostGresql from the command line
+from <component_folder_name>.models import <class_name_for_model>
+<class_name_for_model>.objects.all()
+
+from products.models import Product
+Product.objects.all()
+
+
+<class_name_for_model>.objects.create(arg1='', arg2='', ... , argN='')
+Product.objects.create(title='new test 2', description='new test 2', price='new test 2', summary='sweet')
